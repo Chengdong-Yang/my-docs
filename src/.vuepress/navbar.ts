@@ -4,7 +4,11 @@ export default navbar([
   "/",
   "/portfolio",
   "/demo/",
-  "/techReview/",
+  {
+    text: "技术评审",
+    icon: "lightbulb", // 或者其他你选择的图标
+    link: "/techReview/"
+  },
   {
     text: "指南",
     icon: "lightbulb",
