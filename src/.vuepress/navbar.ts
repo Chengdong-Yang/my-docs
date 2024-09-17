@@ -4,6 +4,7 @@ export default navbar([
   "/",
   "/portfolio",
   "/demo/",
+  "/techReview/",
   {
     text: "指南",
     icon: "lightbulb",
