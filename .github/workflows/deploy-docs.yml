@@ -41,7 +41,7 @@ jobs:
         run: |
           echo "$SSH_PRIVATE_KEY" > private_key
           chmod 600 private_key
-          rsync -avz -e "ssh -i private_key -o StrictHostKeyChecking=no" ./src/.vuepress/dist/ user@117.72.82.97:/home/ycd/blog/
+          rsync -avz -e "ssh -i private_key -o StrictHostKeyChecking=no" ./src/.vuepress/dist/ root@117.72.82.97:/home/ycd/blog/
           rm private_key
 
       - name: 部署文档到 GitHub Pages
